@@ -5,7 +5,6 @@ A simple boostrap starter template.
 
 ![img.png](img.png)
 
-
 **Pros:** 
 1. It's simple - easy enough to edit yoru self or with an LLM.
 2. Plug and play - config.js for all your user facing text
@@ -54,4 +53,4 @@ Features:
 - Auto-updating time display (1-second interval)
 - Auto-updating greeting (1-minute interval)
 - Keyboard support (Enter key) in settings modal
-- Click-outside-to-close functionality for mobile navbar
+- Click-outside-to-close functionality for settings modal 
