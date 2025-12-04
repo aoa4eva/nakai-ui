@@ -11,6 +11,49 @@ const quotes = [
     { text: "Your limitation—it's only your imagination.", author: "Unknown" },
     { text: "Great things never come from comfort zones.", author: "Unknown" }
 ];
+// js/script.js
+
+// Apply config values to DOM
+(function applyTemplateConfig() {
+  if (typeof NAKAI_TEMPLATE_CONFIG === "undefined") return;
+
+  const cfg = NAKAI_TEMPLATE_CONFIG;
+
+  // Title & brand
+  const titleEl = document.getElementById("site-title");
+  if (titleEl) titleEl.textContent = cfg.siteTitle || "Nakai Template";
+
+  const brandEl = document.getElementById("brand-name");
+  if (brandEl) brandEl.textContent = cfg.brandName || cfg.siteTitle || "Nakai Template";
+
+  // Nav labels
+  const navHome = document.getElementById("nav-home");
+  if (navHome) navHome.textContent = cfg.nav?.homeLabel ?? "Home";
+
+  const navSettings = document.getElementById("nav-settings");
+  if (navSettings) navSettings.textContent = cfg.nav?.settingsLabel ?? "Settings";
+
+  const navAbout = document.getElementById("nav-about");
+  if (navAbout) navAbout.textContent = cfg.nav?.aboutLabel ?? "About";
+
+  // Modal title & label
+  const modalTitle = document.getElementById("settingsModalLabel");
+  if (modalTitle) modalTitle.textContent = cfg.settingsModalTitle || "Settings";
+
+  const userNameLabel = document.getElementById("user-name-label");
+  if (userNameLabel) userNameLabel.textContent = cfg.userNameLabel || "Your Name";
+
+  const userNameInput = document.getElementById("user-name-input");
+  if (userNameInput && cfg.userNamePlaceholder) {
+    userNameInput.placeholder = cfg.userNamePlaceholder;
+  }
+
+  // Footer
+  const footerText = document.getElementById("footer-text");
+  if (footerText && cfg.footerText) {
+    footerText.innerHTML = cfg.footerText; // allow the ❤ span etc.
+  }
+})();
 
 // Update time and date
 function updateTime() {
@@ -162,6 +205,8 @@ function init() {
     initSettings();
     initNavbar();
 }
+
+
 
 // Start when DOM is loaded
 document.addEventListener('DOMContentLoaded', init);
