@@ -7,9 +7,9 @@ A simple boostrap starter template.
 
 
 **Pros:** 
-1. It's LLM-friendly - the code can be edited relatively easily by an LLM. 
-2. You can easily replace the content with your own. 
-3. It can serve as a starting point for other projects. 
+1. It's simple - easy enough to edit yoru self or with an LLM.
+2. Plug and play - config.js for all your user facing text
+3. Templated - it can serve as a starting point for other projects. 
 
 Features: 
 
@@ -18,15 +18,14 @@ Features:
 2. Edit the files in the `src` folder 
 3. This is an html/css/js project, so you can edit it directly from your text editor or IDE. The template is simple enough to use without an LLM, but have fun and flex that creative muscle!
 
-# What I learned for AI prompting:
+# Lessons AI prompting:
 1. Aesthetic is important - so if you have a site that you're inspired by, tell Claude about it. 
 2. You can get decent results within the first 3 prompts if you are specific about your aesthetic and basic functionality. 
 3. Adding features isn't always a chore - small additions can be made without copying and pasting. 
 4. Localising your changes to a specific segment of the code is a good idea. 
-5. Version control is an even better idea. You already know to use version control. Always tag your 'stable' versions intuitively and make sure they're committed. 
+5. Always tag your 'stable' versions intuitively and make sure they're committed. Roll back if a hallucination occurs.
 
-
-#Template Features (by Claude)
+# Template Features (by Claude)
 
 ### Display Components:
 - Real-time clock showing current time (24-hour format) and date
