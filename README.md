@@ -6,7 +6,7 @@ A simple boostrap starter template.
 ![img.png](img.png)
 
 **Pros:** 
-1. It's simple - easy enough to edit yoru self or with an LLM.
+1. It's simple - easy enough to edit yourself or with an LLM.
 2. Plug and play - config.js for all your user facing text
 3. Templated - it can serve as a starting point for other projects. 
 
